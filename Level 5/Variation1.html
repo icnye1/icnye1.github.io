@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Variation 1</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	
+	<style>
+		html, body {
+			width: 100%;
+			font-size: 32px;
+			font-family: roboto, sans-serif;
+		}
+		
+	
+		.box {
+			position: absolute;
+			top: 20%;
+			left: 5%;
+			right: 5%;
+			bottom: 20%;
+			text-align: center;
+		}
+		
+		.box span {
+			display: block;
+			margin: 10px 0;
+		}
+		
+		.dumb span:last-child {
+			display: none;
+		}
+		
+		.dumb:hover span:first-child {
+			display: none;
+		}
+		
+		.dumb:hover span:last-child {
+			display: inline;
+			color: hsla(215,100%,69%,1.00);
+		}
+		
+		.shy{
+			color: hsla(359,100%,30%,1.00);
+		}
+		
+		.shy:hover {
+			animation-name: shrinkFont;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+		}
+		
+		.real{
+			color: hsla(121,100%,20%,1.00);
+		}
+		
+		.real:hover {
+			animation-name: fadeOut;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+			color: hsla(56,100%,50%,1.00);
+		}
+		
+		@keyframes fadeOut {
+			from {
+				opacity: 1;
+			}
+			
+			to {
+				opacity: 0;
+			}
+		}
+		
+		@keyframes shrinkFont {
+			from {
+				font-size: 32px;
+				padding: 0;
+			}
+			
+			to {
+				font-size: 16px;
+				padding: 8px 0;
+			}
+		}
+				
+	</style>
+</head>
+
+<body>
+<div id="content">
+	<div class="box">
+		<p>
+			<span class="dumb"><span>Sometimes being dumb is the only smart alternative.</span><span>Sumtimes beeing dum is the only smrt alturnitive.</span></span> 
+			<span class="shy">Shy people are secretly egoists.</span> 
+			<span class="real">Nothing is real.</span> 
+
+		</p>
+	</div>
+</div>
+
+	<a href="../Level 4/variation3.html">Level Before</a>
+<a href="Variation 2/Variation2.html">Next Variation</a>
+</body>
+</html>
